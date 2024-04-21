@@ -57,7 +57,7 @@ ax.plot_surface(y_values, x_values, u_values[0], vmin=u_values[0].min() * 2, cma
 
 def update_anim(framenumber):
     ax.clear()
-    ax.set_zlim(None, 1)   
+    ax.set_zlim(bottom=None, top=1)   
     plot = ax.plot_surface(y_values, x_values, u_values[framenumber], vmin=u_values[0].min() * 2, cmap=cm.Blues)
     return plot
 
